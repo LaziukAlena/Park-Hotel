@@ -1,0 +1,810 @@
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+html {
+    font-size: 10px;    
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(31.56, 83.19, 80.10, 0.50);
+    padding: 30px 0 31px;
+}
+
+
+a {
+    text-decoration: none;   
+}
+
+
+header a{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;   
+}
+
+header a:not(:last-child)::after {
+    content: " ";
+    background-color: #FFFFFF;
+    width: 30px; 
+    height: 2px;
+    display: inline-block;
+    margin: 0 45px;
+    vertical-align: middle
+}   
+    
+p.text {
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;  
+}
+
+section {
+    padding: 100px 0;
+}
+
+.wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+@media  screen and (max-width: 1176px) {
+    .wrapper {
+        padding: 0 40px;
+    }
+} 
+
+.background {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: white;
+    padding: 450px 0 25px;
+}
+
+.background p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    max-width: 495px;
+    margin: 30px auto 60px;
+}
+
+.background a {
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;     
+}
+
+.background a:first-of-type {
+    background: #AE5F3D; 
+    border-radius: 30px;
+    width: 312px;
+    height: 60px;
+    display: block;
+    line-height: 60px;
+    margin: 0 auto;
+    transition: background-color .9s linear;     
+}    
+
+.background a:hover {
+    background-color:  aquamarine;
+}
+
+.arrow:before {
+    content: " ";
+    width: 57px;
+    height: 20px;
+    display: block;
+    background-image: url("../icons/arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 85px auto 0px; 
+}
+   
+#about_us h2 {
+    margin: 30px 0 37px;
+}
+
+#about_us p {
+    max-width: 608px;
+    margin: 0 auto;   
+}
+
+#about_us img {
+    width: 100%;
+    max-width: 617px;
+}
+
+@media  screen and (max-width: 1440px) {
+    .background { 
+        background-image: url("../img/background1440.png"); 
+    }
+} 
+
+@media  screen and (max-width: 1024px) {
+    .background { 
+        background-image: url("../img/background1024.png");
+        padding-top: 353px;    
+    }
+
+    p.text {
+        font-size: 2.2rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem; 
+    }
+
+    header {
+        padding: 24px 0 25px; 
+    } 
+
+    header a {
+        font-size: 1.8rem;
+    }
+
+    header a:not(:last-child)::after {
+        width: 25px; 
+        height: 2px;
+        margin: 0 50px;   
+    }  
+
+    section {
+        padding: 80px 0;
+    }
+
+    .background p {
+        max-width: 356px;
+        margin: 20px auto 45px;
+        font-size: 1.8rem;
+    }
+
+    .background a {
+        font-size: 1.7rem;
+    }
+    .background a:first-of-type {
+        width: 248px;
+        height: 48px;
+        line-height: 48px;
+    }  
+
+    .arrow:before {
+        margin: 40px auto 0; 
+    }
+
+    
+    #about_us p {  
+        max-width: 537px;
+    }  
+
+    #about_us { 
+        padding-bottom: 37px;
+    }   
+}  
+
+@media  screen and (max-width: 768px) {
+
+    .background { 
+        background-image: url("../img/background768.png");
+        padding-top: 249px;        
+    }
+
+    header {
+        padding: 18px auto 20px; 
+    }    
+
+    header a {
+        font-size: 1.5rem;
+    }
+
+    header a:not(:last-child)::after {
+        width: 20px; 
+        height: 1px;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .background p {
+        margin-bottom: 35px;
+    }
+
+    .arrow:before {
+        margin: 27px auto 0px; 
+    }
+
+    #about_us p {  
+        max-width: 571px;
+    }    
+      
+    #about_us img {
+        max-width: 486px;
+    }
+
+    #about_us h2 {
+        margin: 25px auto 32px;
+    }     
+}
+@media  screen and (max-width: 508px) {
+    header a{
+        display: block;   
+    }
+    
+    header a:not(:last-child)::after {
+        width: 25px;
+        height: 1px;
+        display: block;
+        margin: 20px auto; 
+    } 
+}    
+#entertainment {
+    background-color: #F1F1F1;   
+}   
+
+h5 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 25px auto 20px;
+   
+}
+
+#entertainment p.text { 
+    margin: 37px auto 30px;
+    max-width: 520px;   
+}
+   
+#entertainment article {
+    display: inline-block;
+    width: calc((100% - 2 * 24px) / 3);
+    max-width: 444px;
+    background-color: white;
+    border-radius: 30px; 
+    border: 2px #F1F1F1 solid;
+    padding: 30px 5px;    
+}
+
+#entertainment article:not(:last-child) {
+    margin-right: 24px;
+}
+
+#entertainment article.entertainment-type i {
+    font-size: 150px;
+    color: #AE5F3D;
+}
+
+#entertainment article.entertainment-type p { 
+    font-size: 2rem;
+    font-weight: 300;   
+}
+
+@media  screen and (max-width: 1024px) {
+    
+    h5 {
+        font-size: 2.2rem;
+        margin: 15px auto;
+    }
+
+    #entertainment p.text { 
+        max-width: 456px;   
+    }
+       
+    #entertainment article {
+        width: calc((100% - 2 * 20px) / 3); 
+    }
+     
+    #entertainment article:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    #entertainment article.entertainment-type i {
+        font-size: 120px;
+    }
+
+    #entertainment article.entertainment-type p {  
+        font-size: 1.6rem; 
+    }
+}
+
+@media  screen and (max-width: 768px) {
+    
+    h5 {
+        font-size: 2.3rem;
+        margin: 25px auto 20px;
+    }
+
+    #entertainment p.text { 
+        max-width: 520px;
+        margin: 32px auto 35px;
+    }
+       
+    #entertainment article {
+        display: block;
+        width: 100%; 
+        margin: 0 auto;  
+     }
+
+    #entertainment article:not(:last-child) {
+        margin: 0 auto 30px;
+    }
+
+    
+    #entertainment article.entertainment-type i {
+        font-size: 150px;
+    }
+
+    #entertainment article.entertainment-type p { 
+        font-size: 2.3rem; 
+    }
+}
+
+#apartments p.text {
+    max-width: 617px;
+    margin: 30px auto 55px;  
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 25px auto 15px;
+}
+
+#apartments article {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    width: calc((100% - 2 * 48px) / 3);
+    max-width: 698px;
+    position: relative;    
+ }
+
+ #apartments article:nth-child(2n)::before {
+    content: "VIP";
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    background-color: #F14040;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    font-family: "Source Serif Pro";
+    color: white;
+    line-height: 50px;
+ }   
+
+ #apartments article.apartments-type::after {
+    content: "";
+    width: 130px;
+    height: 30px; 
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.80);
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+ }
+
+ #apartments article.apartments-type:nth-of-type(1)::after {
+    content: "от 7 т.р./сутки";  
+ }
+
+ #apartments article.apartments-type:nth-of-type(2)::after {
+    content: "от 23 т.р./сутки";
+ }
+
+ #apartments article.apartments-type:nth-of-type(3)::after {
+    content: "от 13 т.р./сутки"; 
+ }
+
+ #apartments article:not(:last-child) {
+   margin-right: 48px; 
+ }
+
+#apartments article.apartments-type p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #474747;
+}
+
+#apartments article.apartments-type img {
+    width: 100%;
+    max-width: 698px;
+}
+
+@media  screen and (max-width: 1024px) {
+
+    #apartments p.text {
+        margin-bottom: 30px;  
+    }
+    
+    h4 {
+        margin: 15px auto;
+    }
+    
+    #apartments article {
+        display: block;
+        width: 100%; 
+        margin: 0 auto;  
+     }
+
+     #apartments article:not(:last-child) {
+        margin: 0 auto 75px;
+    }
+
+     #apartments article:nth-child(2n)::before {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+        line-height: 60px;
+     }   
+
+     #apartments article.apartments-type::after {
+        width: 150px;
+        height: 34px;
+        font-size: 1.8rem;
+        top: 20px;
+        right: 20px;
+        line-height: 34px;
+     }
+    
+    #apartments article.apartments-type p {
+        font-size: 2.3rem;
+    }
+}    
+    @media  screen and (max-width: 768px) {
+    
+    #apartments p.text {
+        margin: 25px auto 30px;
+        max-width: 501px;  
+    }
+    
+    h4 {
+        margin: 20px auto;
+    }
+    
+    #apartments article {
+        max-width: 590px;  
+    }
+
+     #apartments article:not(:last-child) {
+        margin: 0 auto 80px;
+    }
+
+    #apartments article:nth-child(2n)::before {
+        font-size: 1.8rem;
+    }  
+
+    #apartments article.apartments-type::after {
+        width: 174px;
+        height: 36px;
+        font-size: 2rem;
+        top: 10px;
+        right: 10px;
+        line-height: 36px;
+    }
+    
+    #apartments article.apartments-type p {
+        font-size: 2.2rem;
+    }
+}  
+
+#booking_block {
+    background-color: #F1F1F1;
+}
+
+form {
+    display: block;
+    max-width: 1016px;
+    background: white;
+    border-radius: 30px;
+    border: 1px #EEEEEE solid;
+    padding: 100px 119px;
+    margin: 0 auto;   
+}
+
+#booking_block p.text {
+    max-width: 572px;
+    margin: 30px auto 50px;   
+}
+
+p.paragraf {
+    font-size: 2.2rem;
+    margin-bottom: 20px; 
+    text-align: left;
+    font-weight: 300;
+}
+
+form div:not(:last-of-type) {
+    margin-bottom: 20px;  
+}
+
+form div {
+    text-align: left;
+    color: #474747;    
+}
+
+label {
+    font-size: 2.2rem;
+    font-weight: 300;   
+}
+
+label[for="userEmail"], 
+label[for="userName"] {
+    display: block;
+    color: #454545;
+    margin-bottom: 20px;
+}
+
+label[for="userEmail"],
+label[for="userName"] {
+    text-align: left;
+}
+
+label:focus {
+    outline-color:#F1F1F1;
+}
+
+input {
+    font-size: 2rem;
+    font-weight: 300;
+    border: 1px #AE5F3D solid;
+    color: #9D9D9D;
+}
+
+input[type="text"],
+input[type="email"] {
+    margin-bottom: 25px;
+    height: 60px;
+    width: 100%;
+    padding-left: 35px;
+}
+
+input[type="submit"] {
+    background-color: #AE5F3D;
+    color: white;
+    font-weight: 500;
+    height: 60px;
+    width: 404px;
+    border-radius: 30px;
+    margin: 40px auto 0;
+    transition: background-color .9s linear; 
+} 
+
+input[type="submit"]:hover {
+    background-color: rgb(22, 140, 140);
+}
+    
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+    border: 1px #474747 solid;
+}
+
+@media  screen and (max-width: 1024px) {
+    
+    form {
+        max-width: 820px;
+        padding: 80px 67px;   
+    }
+    
+    #booking_block p.text {
+        margin: 30px auto;  
+    }
+    
+    p.paragraf {
+        font-size: 2rem;    
+    }
+    
+    label {
+        font-size: 2rem; 
+    }
+    
+    input {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        height: 53px;
+    }
+    
+    input[type="submit"] {
+        height: 48px;
+        width: 324px;  
+    } 
+}  
+
+@media  screen and (max-width: 768px) {
+    #booking_block .wrapper {
+        padding: 0 24px;
+    }
+        
+   
+    form {
+        padding: 70px 53px;
+        max-width: 720px;  
+    }
+    
+    #booking_block p.text {
+        margin: 25px auto 35px;  
+    }
+    
+    p.paragraf {
+        font-size: 2rem;  
+    }
+    
+    label {
+        font-size: 2.2rem; 
+    }
+    
+    input {
+        font-size: 2.0rem;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        height: 58px;
+    }  
+        
+    input[type="radio"] {
+        width: 20px;
+        height: 20px;
+        margin-right: 11px;
+    }
+}    
+
+footer {
+    padding: 70px 0;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 500;  
+}
+
+.blog-navigation {
+    width: 150px;
+    margin: 35px auto;
+    padding: 25px 0;
+    border-top: 0.70px #737373 solid;
+    border-bottom: 0.70px #737373 solid;   
+}
+
+.blog-navigation a {
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem; 
+    display: block;
+    text-transform: uppercase;   
+}
+
+.blog-navigation a:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.media a {
+    display: inline-block;   
+}
+
+.media a:hover {
+    transform: scale(2); 
+}
+
+.media a:not(:last-child) {
+    margin-right: 30px;
+}
+
+.media .vk::before {
+    content: " ";
+    width: 28px;
+    height: 28px;
+    display: block;
+    background-image: url("../icons/vk.svg");
+    margin: calc(50% - 14px) auto 0;    
+}
+
+.media .whatsapp::before {
+    content: " ";
+    width: 22px;
+    height: 24px;
+    display: block;
+    background-image: url("../icons/whatsapp.svg");
+    margin: calc(50% - 12px) auto 0;
+    background-repeat: no-repeat;
+}   
+
+.media .telegram:before {
+    content: " ";
+    width: 22px;
+    height: 24px;
+    display: block;
+    background-image: url("../icons/telegram.svg");
+    margin: calc(50% - 12px) auto 0;
+}
+
+.media .instagram:before {
+    content: " ";
+    width: 22px;
+    height: 21px;
+    display: block;
+    background-image: url("../icons/instagram.svg");
+    margin: calc(50% - 10.5px) auto 0;
+} 
+
+@media  screen and (max-width: 1024px) {
+    footer {
+        padding: 50px 0;
+    }
+    
+    h3 {
+        font-size: 2.7rem;
+    }
+    
+    .blog-navigation {
+        width: 140px;
+        margin: 25px auto;
+        padding: 20px 0;
+    }
+    
+    .blog-navigation a { 
+        font-size: 1.3rem; 
+    }  
+} 
+
+@media  screen and (max-width: 768px) {
+    
+    h3 {
+        font-size: 2.5rem;
+    }
+    
+    .blog-navigation {
+        width: 90px;
+    }
+    
+    .blog-navigation a {
+        font-size: 1.5rem;
+    }
+
+    .blog-navigation a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}  
+.up {
+    position: fixed;
+    bottom:50px;
+    right:30px;
+}      
+#top .up i {
+    font-size: 50px;
+    color: #AE5F3D;
+    background: white;
+    border-radius: 50px;
+}
