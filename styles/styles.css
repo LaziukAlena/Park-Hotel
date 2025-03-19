@@ -96,12 +96,13 @@ section {
 .background a:first-of-type {
     background: #AE5F3D; 
     border-radius: 30px;
-    width: 312px;
+    max-width: 312px;
     height: 60px;
     display: block;
     line-height: 60px;
     margin: 0 auto;
     transition: background-color .9s linear;     
+    width: 100%;
 }    
 
 .background a:hover {
@@ -185,7 +186,7 @@ section {
         font-size: 1.7rem;
     }
     .background a:first-of-type {
-        width: 248px;
+        max-width: 248px;
         height: 48px;
         line-height: 48px;
     }  
@@ -591,10 +592,12 @@ input[type="submit"] {
     color: white;
     font-weight: 500;
     height: 60px;
-    width: 404px;
+    max-width: 404px;
     border-radius: 30px;
     margin: 40px auto 0;
     transition: background-color .9s linear; 
+    display: block;
+    width: 100%;
 } 
 
 input[type="submit"]:hover {
@@ -638,7 +641,7 @@ input[type="radio"] {
     
     input[type="submit"] {
         height: 48px;
-        width: 324px;  
+        max-width: 324px;  
     } 
 }  
 
